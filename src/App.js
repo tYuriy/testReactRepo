@@ -34,6 +34,7 @@ function DoubleTag() {
       <div className="divTag">Second sibling tag</div>
       <div className="divTag">{API_URL}</div>
       <div className="divTag">Checking + {process.env.NODE_ENV}</div>
+      <div className="divTag">Checking + {process.env.REACT_APP_TEST}</div>
     </>
   )
 }
