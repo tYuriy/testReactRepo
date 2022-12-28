@@ -1,11 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 
+const API_URL = 'production URL'
+// const API_URL = 'development URL'
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        This is just a header
+        {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -16,10 +20,21 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
       </header>
+      <DoubleTag/>
     </div>
   );
+}
+
+function DoubleTag() {
+  return (
+    <>
+      <div className="divTag">First sibling tag</div>
+      <div className="divTag">Second sibling tag</div>
+      <div className="divTag">{API_URL}</div>
+    </>
+  )
 }
 
 export default App;
