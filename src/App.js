@@ -33,6 +33,7 @@ function DoubleTag() {
       <div className="divTag">First sibling tag</div>
       <div className="divTag">Second sibling tag</div>
       <div className="divTag">{API_URL}</div>
+      <div className="divTag">{process.env.NODE_ENV}</div>
     </>
   )
 }
